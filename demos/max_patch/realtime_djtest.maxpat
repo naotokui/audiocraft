@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 94.0, 154.0, 1598.0, 830.0 ],
+		"rect" : [ 87.0, 141.0, 1598.0, 830.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,45 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-76",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1390.0, 424.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1175.0, 482.293456999999989, 41.0, 20.0 ],
+					"text" : "KEEP"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-74",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1375.0, 409.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1175.0, 294.0, 41.0, 20.0 ],
+					"text" : "KEEP"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-73",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1360.0, 394.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1175.0, 90.0, 41.0, 20.0 ],
+					"text" : "KEEP"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-57",
 					"maxclass" : "toggle",
@@ -533,7 +572,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 449.0, 334.0, 139.0, 36.0 ],
-									"text" : "/musicgen/progress 2.203333"
+									"text" : "/musicgen/progress 2.046667"
 								}
 
 							}
@@ -3466,7 +3505,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 613.0, 910.0, 154.0, 50.0 ],
-					"text" : "/mnt/c/tmp/input.wav 3953 130.1 1.018898 \"IDM complex beat\""
+					"text" : "/mnt/c/tmp/input.wav 4374 109.8 1. \"IDM complex bass\""
 				}
 
 			}
@@ -3507,7 +3546,7 @@
 					"patching_rect" : [ 652.0, 710.778442000000041, 266.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 546.847455263137817, 360.488372294647206, 245.0, 123.0 ],
-					"text" : "IDM complex beat"
+					"text" : "IDM complex bass"
 				}
 
 			}
