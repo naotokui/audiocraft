@@ -46,8 +46,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1181.5, 44.967163000000255, 49.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 661.0, 321.475646999999981, 49.0, 20.0 ],
-					"text" : "reverse"
+					"presentation_rect" : [ 653.0, 323.475646999999981, 25.0, 20.0 ],
+					"text" : "rev"
 				}
 
 			}
@@ -61,7 +61,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1155.0, 44.967163000000255, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 635.0, 321.475646999999981, 24.0, 24.0 ]
+					"presentation_rect" : [ 653.0, 345.475646999999981, 24.0, 24.0 ]
 				}
 
 			}
@@ -232,7 +232,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 925.153846025466919, 99.0, 158.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 375.0, 263.0, 256.0, 23.0 ],
+					"presentation_rect" : [ 375.0, 263.0, 272.0, 23.0 ],
 					"size" : 5.0,
 					"style" : "rnbolight"
 				}
@@ -412,7 +412,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 9,
 					"outlettype" : [ "float", "list", "float", "float", "float", "float", "float", "", "int" ],
-					"patching_rect" : [ 413.0, 264.0, 103.0, 22.0 ],
+					"patching_rect" : [ 419.0, 264.0, 103.0, 22.0 ],
 					"text" : "info~ #0_buf1"
 				}
 
@@ -440,7 +440,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 757.0, 581.0, 192.0, 10.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 375.0, 335.475646999999981, 256.0, 10.0 ],
+					"presentation_rect" : [ 375.0, 359.475646999999981, 272.0, 10.0 ],
 					"size" : 8205.0,
 					"style" : "redness"
 				}
@@ -458,7 +458,7 @@
 					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
 					"patching_rect" : [ 336.5, 531.0, 256.0, 64.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 375.0, 288.0, 256.0, 47.0 ],
+					"presentation_rect" : [ 375.0, 288.0, 272.0, 70.0 ],
 					"waveformcolor" : [ 1.0, 1.0, 1.0, 0.65 ]
 				}
 
@@ -474,7 +474,7 @@
 					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
 					"patching_rect" : [ 336.5, 531.0, 256.0, 64.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 375.0, 288.0, 256.0, 47.0 ],
+					"presentation_rect" : [ 375.0, 288.0, 272.0, 70.0 ],
 					"waveformcolor" : [ 1.0, 1.0, 1.0, 0.65 ]
 				}
 
@@ -814,7 +814,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-110", 0 ],
-					"source" : [ "obj-23", 5 ]
+					"source" : [ "obj-23", 6 ]
 				}
 
 			}
