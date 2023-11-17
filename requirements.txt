@@ -19,8 +19,4 @@ demucs
 gradio
 torchmetrics
 encodec
-# librosa==0.7.1
-# madmom==0.16.1
-# #numpy==1.17.4
-# tensorly==0.4.4
-# scikit-learn
+protobuf
