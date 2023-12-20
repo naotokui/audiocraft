@@ -24,7 +24,7 @@ We also recommend having `ffmpeg` installed, either through your system or Anaco
 ```bash
 sudo apt-get install ffmpeg
 # Or if you are using Anaconda or Miniconda
-conda install 'ffmpeg<5' -c  conda-forge
+conda install "ffmpeg<5" -c conda-forge
 ```
 
 ## Models
@@ -58,7 +58,9 @@ Yes! We provide the training code for [EnCodec](./docs/ENCODEC.md), [MusicGen](.
 
 #### Where are the models stored?
 
-Hugging Face stored the model in a specific location, which can be overriden by setting the `AUDIOCRAFT_CACHE_DIR` environment variable.
+Hugging Face stored the model in a specific location, which can be overriden by setting the `AUDIOCRAFT_CACHE_DIR` environment variable for the AudioCraft models.
+In order to change the cache location of the other Hugging Face models, please check out the [Hugging Face Transformers documentation for the cache setup](https://huggingface.co/docs/transformers/installation#cache-setup).
+Finally, if you use a model that relies on Demucs (e.g. `musicgen-melody`) and want to change the download location for Demucs, refer to the [Torch Hub documentation](https://pytorch.org/docs/stable/hub.html#where-are-my-downloaded-models-saved).
 
 
 ## License

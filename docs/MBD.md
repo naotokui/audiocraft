@@ -2,7 +2,7 @@
 
 AudioCraft provides the code and models for MultiBand Diffusion, [From Discrete Tokens to High Fidelity Audio using MultiBand Diffusion][arxiv].
 MultiBand diffusion is a collection of 4 models that can decode tokens from
-<a href="https://github.com/facebookresearch/encodec">EnCodec tokenizer</a> into waveform audio.
+<a href="https://github.com/facebookresearch/encodec">EnCodec tokenizer</a> into waveform audio. You can listen to some examples on the <a href="https://ai.honu.io/papers/mbd/">sample page</a>.
 
 <a target="_blank" href="https://colab.research.google.com/drive/1JlTOjB-G0A2Hz3h8PK63vLZk4xdCI5QB?usp=sharing">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
@@ -18,7 +18,7 @@ Please follow the AudioCraft installation instructions from the [README](../READ
 ## Usage
 
 We offer a number of way to use MultiBand Diffusion:
-1. The MusicGen demo includes a toggle to try diffusion decoder. You can use the demo locally by running [`python -m demos.musicgen_app --share`](../demos/musicgen_app.py), or through the [MusicGen Colab](https://colab.research.google.com/drive/1JlTOjB-G0A2Hz3h8PK63vLZk4xdCI5QB?usp=sharing).
+1. The MusicGen demo includes a toggle to try diffusion decoder. You can use the demo locally by running [`python demos/musicgen_app.py`](../demos/musicgen_app.py), or through the [MusicGen Colab](https://colab.research.google.com/drive/1JlTOjB-G0A2Hz3h8PK63vLZk4xdCI5QB?usp=sharing).
 2. You can play with MusicGen by running the jupyter notebook at [`demos/musicgen_demo.ipynb`](../demos/musicgen_demo.ipynb) locally (if you have a GPU).
 
 ## API
@@ -61,7 +61,7 @@ from audiocraft.data.audio import audio_read, audio_write
 
 bandwidth = 3.0  # 1.5, 3.0, 6.0
 mbd = MultiBandDiffusion.get_mbd_24khz(bw=bandwidth)
-encodec = EncodecModel.get_encodec_24khz()
+encodec = EncodecModel.encodec_model_24khz()
 
 somepath = ''
 wav, sr = audio_read(somepath)
@@ -85,7 +85,7 @@ We provide a dummy dataset containing just a few examples for illustrative purpo
 
 ### Example configurations and grids
 
-One can train diffusion models as described in the paper by using this [dora grid](../audiocraft/grids/diffusion/4_bands_base_32khz.py).
+One can train diffusion models as described in the paper by using this [dora grid](./audiocraft/grids/diffusion/4_bands_base_32khz.py).
 ```shell
 # 4 bands MBD trainning
 dora grid diffusion.4_bands_base_32khz
@@ -113,5 +113,5 @@ Learn more about AudioCraft training pipelines in the [dedicated section](./TRAI
 See license information in the [README](../README.md).
 
 
-[arxiv]: https://dl.fbaipublicfiles.com/encodec/Diffusion/paper.pdf
+[arxiv]: https://arxiv.org/abs/2308.02560
 [mbd_samples]: https://ai.honu.io/papers/mbd/
